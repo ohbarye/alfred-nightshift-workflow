@@ -61,9 +61,7 @@
 				<key>escaping</key>
 				<integer>68</integer>
 				<key>script</key>
-				<string>#!/usr/bin/env osascript
-
-tell application "System Preferences" to reveal pane "com.apple.preference.displays"
+				<string>tell application "System Preferences" to reveal pane "com.apple.preference.displays"
 
 
 tell application "System Events"
@@ -75,7 +73,7 @@ tell application "System Events"
 
 	tell _T
 		click radio button "Night Shift"
-		click checkbox "Turn On Until Tomorrow"
+		click checkbox 1
 	end tell
 end tell
 
@@ -117,7 +115,7 @@ quit application "System Preferences"</string>
 	<key>variablesdontexport</key>
 	<array/>
 	<key>version</key>
-	<string>1.0.0</string>
+	<string>1.0.1</string>
 	<key>webaddress</key>
 	<string>https://github.com/ohbarye/alfred-nightshift-workflow</string>
 </dict>
